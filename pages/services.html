@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — GFX Pools</title>
+  <meta name="description" content="Custom pool construction, spa installation, renovation, and hardscape services in Fort Mohave, AZ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-detail:last-of-type { border-bottom: none; }
+    .service-detail.reverse { direction: rtl; }
+    .service-detail.reverse > * { direction: ltr; }
+    .service-detail img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+    .service-detail-text h2 { margin-bottom: 1rem; }
+    .service-detail-text p { color: var(--muted); margin-bottom: 1rem; line-height: 1.8; }
+    .service-includes {
+      margin: 1.5rem 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .service-includes li {
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .service-includes li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      background: var(--border);
+    }
+    .process-step {
+      background: var(--dark-card);
+      padding: 2.5rem 2rem;
+      position: relative;
+    }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+    .process-step h4 { margin-bottom: 0.5rem; font-size: 1rem; }
+    .process-step p { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+
+    @media (max-width: 768px) {
+      .service-detail { grid-template-columns: 1fr; gap: 2rem; }
+      .service-detail.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">GFX <span>Pools</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">What We Do</span>
+    <h1>Full-Service Pool Construction</h1>
+    <div class="divider center"></div>
+    <p>Every service we offer is performed by our own crew — no subcontracting, no handoffs, no guesswork.</p>
+  </div>
+
+  <!-- ── Service detail blocks ──────────────────────────────── -->
+  <section>
+    <div class="container">
+
+      <div class="service-detail">
+        <img src="../images/service-new-pool.jpg" alt="Custom pool construction" loading="lazy">
+        <div class="service-detail-text">
+          <span class="eyebrow">Signature Service</span>
+          <h2>Custom Pool Design & Construction</h2>
+          <div class="divider"></div>
+          <p>We engineer each pool from the ground up — literally. Your lot, your soil conditions, your vision. No catalog shapes, no off-the-shelf specs.</p>
+          <p>We handle design, permitting, excavation, gunite or shotcrete application, plumbing, electrical, and finish. One crew, start to finish.</p>
+          <ul class="service-includes">
+            <li>On-site design consultation</li>
+            <li>Permit procurement</li>
+            <li>Full excavation</li>
+            <li>Gunite / shotcrete shell</li>
+            <li>Plumbing & equipment installation</li>
+            <li>Interior finish (plaster, pebble, tile)</li>
+            <li>Startup & orientation</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+      <div class="service-detail reverse">
+        <img src="../images/service-spa.jpg" alt="Spa and water features" loading="lazy">
+        <div class="service-detail-text">
+          <span class="eyebrow">Elevated Experience</span>
+          <h2>Spas & Water Features</h2>
+          <div class="divider"></div>
+          <p>An integrated spa or water feature changes the whole character of a backyard. We design them to flow naturally from the pool — not as an afterthought bolted on later.</p>
+          <p>Whether it's a raised spillover spa, a grotto-style waterfall, or a sheer descent feature, we build it to the same standard as the pool itself.</p>
+          <ul class="service-includes">
+            <li>Attached & freestanding spas</li>
+            <li>Waterfalls & grottos</li>
+            <li>Sheer descents & bubblers</li>
+            <li>Fire & water combinations</li>
+            <li>LED lighting integration</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+      <div class="service-detail">
+        <img src="../images/service-renovation.jpg" alt="Pool renovation" loading="lazy">
+        <div class="service-detail-text">
+          <span class="eyebrow">Refresh & Restore</span>
+          <h2>Pool Renovation</h2>
+          <div class="divider"></div>
+          <p>An aging pool doesn't have to stay that way. Outdated finishes, failing equipment, and deteriorating tile can all be addressed — often for a fraction of a new build.</p>
+          <p>We assess what's worth keeping and what needs to go, and we give you an honest scope before any work starts.</p>
+          <ul class="service-includes">
+            <li>Interior replastering & pebble finish</li>
+            <li>Tile replacement</li>
+            <li>Equipment upgrades (pumps, heaters, automation)</li>
+            <li>Leak detection & repair</li>
+            <li>Coping & deck resurfacing</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+      <div class="service-detail reverse">
+        <img src="../images/service-decking.jpg" alt="Pool decking and hardscape" loading="lazy">
+        <div class="service-detail-text">
+          <span class="eyebrow">The Full Picture</span>
+          <h2>Decking & Hardscape</h2>
+          <div class="divider"></div>
+          <p>The deck is half the experience. A beautiful pool surrounded by cracked or generic concrete doesn't deliver. We build the surround with the same intention as the water itself.</p>
+          <p>From travertine to cool deck to stamped concrete, we match the material to the aesthetic and the climate.</p>
+          <ul class="service-includes">
+            <li>Travertine & natural stone</li>
+            <li>Cool deck & Kool Coat</li>
+            <li>Stamped & colored concrete</li>
+            <li>Pavers & flagstone</li>
+            <li>Retaining walls & raised planters</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Our Process ─────────────────────────────────────────── -->
+  <section style="background: var(--dark-mid); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">How It Works</span>
+        <h2>Our Process</h2>
+        <div class="divider center"></div>
+      </div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h4>Consultation</h4>
+        <p>We visit your site, listen to your vision, and assess what the lot will support. No cost, no obligation.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h4>Design & Quote</h4>
+        <p>We produce a detailed scope and fixed-price quote. You'll know exactly what you're getting and what it costs.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h4>Permits</h4>
+        <p>We handle all permit applications and inspections. You don't have to chase the county — we do.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h4>Construction</h4>
+        <p>Our crew digs, forms, shoots, plumbs, and finishes. We keep you updated at every milestone.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <h4>Startup & Handoff</h4>
+        <p>We balance the water, walk you through the equipment, and make sure everything is right before we leave.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────────── -->
+  <section class="financing-banner">
+    <div class="container">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Lyon Financial</span>
+      <h2>Finance Your Dream Pool</h2>
+      <p>Competitive rates, fast approvals, and terms designed for homeowners.</p>
+      <a href="https://www.lyonfinancial.net/apply/" target="_blank" rel="noopener" class="btn btn-financing">Apply for Financing</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">GFX <span style="color: var(--orange);">Pools</span></div>
+        <p>Ground Effects LLC — Custom pool and spa contractor serving Fort Mohave, Bullhead City, Laughlin, and surrounding areas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+          <li><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></li>
+          <li><a href="https://www.facebook.com/GFXPools" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ground Effects LLC. All rights reserved.</span>
+      <span>Fort Mohave, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

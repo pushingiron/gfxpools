@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — GFX Pools</title>
+  <meta name="description" content="Frequently asked questions about custom pool construction, timelines, costs, and financing from GFX Pools in Fort Mohave, AZ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .faq-nav {
+      position: sticky;
+      top: 6rem;
+    }
+    .faq-nav h4 {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .faq-nav ul { list-style: none; }
+    .faq-nav li { margin-bottom: 0.5rem; }
+    .faq-nav a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .faq-nav a:hover { color: var(--orange); }
+
+    .faq-group { margin-bottom: 4rem; }
+    .faq-group-title {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      cursor: pointer;
+      list-style: none;
+    }
+    .faq-question::-webkit-details-marker { display: none; }
+    .faq-question h3 {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .faq-toggle {
+      color: var(--orange);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: transform 0.2s;
+    }
+    details[open] .faq-toggle { transform: rotate(45deg); }
+    .faq-answer {
+      padding-top: 1rem;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+    .faq-answer p + p { margin-top: 0.75rem; }
+    .faq-answer a { color: var(--orange); }
+
+    @media (max-width: 768px) {
+      .faq-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .faq-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">GFX <span>Pools</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html" class="active">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">Common Questions</span>
+    <h1>FAQ</h1>
+    <div class="divider center"></div>
+    <p>Straight answers about the process, the timeline, and what to expect.</p>
+  </div>
+
+  <section>
+    <div class="container faq-layout">
+
+      <!-- Sidebar nav -->
+      <aside class="faq-nav">
+        <h4>Jump to</h4>
+        <ul>
+          <li><a href="#process">The Process</a></li>
+          <li><a href="#cost">Cost & Financing</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#maintenance">Maintenance</a></li>
+          <li><a href="#desert-steel">Desert Steel Shop</a></li>
+        </ul>
+      </aside>
+
+      <!-- FAQ content -->
+      <div>
+
+        <div class="faq-group" id="process">
+          <div class="faq-group-title">The Process</div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>How does the process start?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>It starts with a conversation — either by phone or a site visit. We come out, look at your lot, listen to what you have in mind, and give you an honest read on what's feasible. There's no cost for this and no obligation.</p>
+                <p>From there, we put together a detailed scope and fixed-price quote. You'll know exactly what you're getting before any contract is signed.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Do you handle permits?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Yes. Permit procurement and coordination with the county is part of our scope on every new build. You don't have to navigate that — we do.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Do you use subcontractors?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>No. Our crew handles the work from excavation through startup. We don't subcontract critical phases of the build. This keeps quality consistent and accountability clear.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>What areas do you serve?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>We're based in Fort Mohave and regularly work throughout Bullhead City, Kingman, Lake Havasu City, and Laughlin, NV. If you're outside those areas, reach out — we'll let you know if we can help.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="faq-group" id="cost">
+          <div class="faq-group-title">Cost & Financing</div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>What does a custom pool cost?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>It varies significantly based on size, shape, finish, and features. A straightforward pool in the Mohave Valley area typically starts around $40,000–$50,000. Additions like a spa, water features, or premium finishes add to that.</p>
+                <p>We don't quote a number until we've seen your lot and understood what you want. We'd rather give you an accurate number than a low one that changes later.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Do you offer financing?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Yes — we work with Lyon Financial, a pool-specific lender with competitive rates and fast approvals. You can <a href="https://www.lyonfinancial.net/apply/" target="_blank">apply directly through their site</a> or ask us for the dealer-specific link during your consultation.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Is your quote fixed price?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Yes. We put together a detailed fixed-price contract before work starts. The only time a price changes is if the scope changes — and that only happens with your approval.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="faq-group" id="timeline">
+          <div class="faq-group-title">Timeline</div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>How long does a new pool take to build?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Most builds run 8–14 weeks from permit approval to startup. Permitting itself can take 2–4 weeks depending on the county's workload. We'll give you a realistic schedule before you commit.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>What time of year is best to start?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Fall and winter are ideal in the Mohave Valley — cooler temps are easier on cure times and the crew. If you want to swim by summer, you'll want to start the process by January at the latest.</p>
+                <p>We build year-round, so there's no bad time to start the conversation.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="faq-group" id="maintenance">
+          <div class="faq-group-title">Maintenance</div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Do you provide pool maintenance after the build?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>We handle startup and initial water balancing, and we walk you through the equipment operation thoroughly. Ongoing weekly maintenance is typically handled by a pool service company — we can recommend local services if needed.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>What warranty do you provide?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Our structural shell carries a workmanship warranty, and all equipment comes with manufacturer warranties. We'll walk through coverage specifics during the quoting process.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="faq-group" id="desert-steel">
+          <div class="faq-group-title">Desert Steel Shop</div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>What is Desert Steel and how does it relate to GFX Pools?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Desert Steel is a manufacturer of hand-crafted metal sculptures designed for outdoor and poolside display. We carry their products because they complement the kind of spaces we build — durable, striking, built for desert environments.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>How does shipping work for Desert Steel products?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Products ship directly from Desert Steel to your address. Shipping costs are calculated based on the size and weight of the piece and your location. You'll see shipping details at checkout.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-item">
+            <details>
+              <summary class="faq-question">
+                <h3>Can I see the sculptures in person before buying?</h3>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Contact us and we may be able to arrange a viewing of available pieces. Alternatively, Desert Steel's own website has additional photography and detail on each product.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Still have questions ───────────────────────────────── -->
+  <section class="financing-banner">
+    <div class="container">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Still Have Questions?</span>
+      <h2>Just Ask Us Directly</h2>
+      <p>We're happy to answer anything that isn't covered here.</p>
+      <a href="contact.html" class="btn btn-financing">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">GFX <span style="color: var(--orange);">Pools</span></div>
+        <p>Ground Effects LLC — Custom pool and spa contractor serving Fort Mohave, Bullhead City, Laughlin, and surrounding areas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+          <li><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></li>
+          <li><a href="https://www.facebook.com/GFXPools" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ground Effects LLC. All rights reserved.</span>
+      <span>Fort Mohave, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

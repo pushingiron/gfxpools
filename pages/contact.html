@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — GFX Pools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-info h3 { margin-bottom: 0.5rem; }
+    .contact-info p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    .contact-info a { color: var(--orange); }
+    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.9rem 1rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--orange); }
+    .form-group textarea { min-height: 140px; resize: vertical; }
+    .form-group select option { background: var(--dark-card); }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">GFX <span>Pools</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">Let's Talk</span>
+    <h1>Start Your Project</h1>
+    <div class="divider center"></div>
+    <p>Tell us about your vision. We'll reach out within one business day.</p>
+  </div>
+
+  <section>
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Reach Us</span>
+        <h3>Ground Effects LLC</h3>
+        <p>Fort Mohave, Arizona</p>
+
+        <h3>Phone</h3>
+        <p><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></p>
+
+        <h3>Email</h3>
+        <p><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></p>
+
+        <h3>Service Area</h3>
+        <p>Fort Mohave · Bullhead City · Kingman · Laughlin, NV · Lake Havasu City</p>
+
+        <h3>Follow Us</h3>
+        <p><a href="https://www.facebook.com/GFXPools" target="_blank" rel="noopener">Facebook — See our latest projects</a></p>
+      </div>
+
+      <div>
+        <!--
+          Replace this form with your preferred form handler:
+          - Formspree (free tier works fine for low volume)
+          - Netlify Forms (if hosting on Netlify)
+          - EmailJS (no backend required)
+          Update the action= attribute accordingly.
+        -->
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="new-pool">New Pool Construction</option>
+              <option value="spa">Spa / Water Feature</option>
+              <option value="renovation">Pool Renovation</option>
+              <option value="decking">Decking & Hardscape</option>
+              <option value="other">Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" placeholder="Lot size, timeline, budget range, any ideas you have..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">GFX <span style="color: var(--orange);">Pools</span></div>
+        <p>Ground Effects LLC — Custom pool and spa contractor serving Fort Mohave, Bullhead City, Laughlin, and surrounding areas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+          <li><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></li>
+          <li><a href="https://www.facebook.com/GFXPools" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ground Effects LLC. All rights reserved.</span>
+      <span>Fort Mohave, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

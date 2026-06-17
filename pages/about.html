@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — GFX Pools</title>
+  <meta name="description" content="Ground Effects LLC — custom pool and spa contractor based in Fort Mohave, Arizona. Learn our story.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-intro img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+    .about-intro-text h2 { margin-bottom: 1.5rem; }
+    .about-intro-text p { color: var(--muted); margin-bottom: 1.2rem; line-height: 1.8; }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: var(--border);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stat-block {
+      background: var(--dark-card);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6vw, 5rem);
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+    .value-item { border-left: 2px solid var(--orange); padding-left: 1.5rem; }
+    .value-item h4 { margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 600; font-size: 1rem; }
+    .value-item p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .about-intro { grid-template-columns: 1fr; gap: 2.5rem; }
+      .stats-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">GFX <span>Pools</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">Our Story</span>
+    <h1>Built on the Desert Floor</h1>
+    <div class="divider center"></div>
+    <p>Ground Effects LLC has been crafting custom pools and spas in the Tri-State area for years. We know this landscape — and we know how to build something that lasts in it.</p>
+  </div>
+
+  <!-- ── Intro ───────────────────────────────────────────────── -->
+  <section>
+    <div class="container about-intro">
+      <img src="../images/about-team.jpg" alt="GFX Pools team at work" loading="lazy">
+      <div class="about-intro-text">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Craftsmen First. Contractors Second.</h2>
+        <div class="divider"></div>
+        <p>Ground Effects LLC was founded on a simple belief: that a swimming pool should be engineered as precisely as it is beautiful. We're not a high-volume operation pushing cookie-cutter installs — we take on the projects that demand real skill.</p>
+        <p>Based in Fort Mohave, we serve homeowners across Bullhead City, Kingman, Lake Havasu City, and across the river into Laughlin, Nevada. The Mojave Desert climate demands durable materials, thoughtful drainage, and finishes that hold up under extreme heat — we design for all of it.</p>
+        <p>Every project is managed by our own crew from excavation to final finish. No subcontracting the hard parts. No surprises on the back end.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Start a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ──────────────────────────────────────────────── -->
+  <div class="stats-row">
+    <div class="stat-block">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years in Business</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">200+</div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Owner-Operated</div>
+    </div>
+  </div>
+
+  <!-- ── Values ─────────────────────────────────────────────── -->
+  <section style="background: var(--dark-mid); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">How We Work</span>
+        <h2>Our Principles</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4>Precision Engineering</h4>
+          <p>We don't eyeball dimensions or guess at load bearing. Every pool is engineered to last in desert soil conditions.</p>
+        </div>
+        <div class="value-item">
+          <h4>Direct Communication</h4>
+          <p>You deal with the owner, not a salesperson. From the first call through final inspection, one point of contact.</p>
+        </div>
+        <div class="value-item">
+          <h4>Desert-Proven Materials</h4>
+          <p>We specify finishes and equipment rated for extreme heat exposure and UV intensity. Nothing that will fade or crack in year two.</p>
+        </div>
+        <div class="value-item">
+          <h4>No Subcontract Surprises</h4>
+          <p>Our crew does the work. We don't hand off critical phases to unfamiliar labor and hope for the best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────────── -->
+  <section class="financing-banner">
+    <div class="container">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Ready to Build?</span>
+      <h2>Let's Talk About Your Project</h2>
+      <p>No pressure. Just a conversation about what you're envisioning and what it takes to get there.</p>
+      <a href="contact.html" class="btn btn-financing">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">GFX <span style="color: var(--orange);">Pools</span></div>
+        <p>Ground Effects LLC — Custom pool and spa contractor serving Fort Mohave, Bullhead City, Laughlin, and surrounding areas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+          <li><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></li>
+          <li><a href="https://www.facebook.com/GFXPools" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ground Effects LLC. All rights reserved.</span>
+      <span>Fort Mohave, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

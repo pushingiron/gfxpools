@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials — GFX Pools</title>
+  <meta name="description" content="What GFX Pools clients say about their custom pool and spa experience in Fort Mohave, AZ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .testimonials-masonry {
+      columns: 2;
+      column-gap: 1.5rem;
+    }
+    .testimonial-card {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-card.featured {
+      background: var(--dark-mid);
+      border-color: var(--orange);
+    }
+    .testimonial-card.featured .testimonial-text {
+      font-size: 1.5rem;
+    }
+    .testimonial-service {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 768px) {
+      .testimonials-masonry { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">GFX <span>Pools</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="testimonials.html" class="active">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">Client Reviews</span>
+    <h1>What Our Clients Say</h1>
+    <div class="divider center"></div>
+    <p>We let the work speak — and our clients speak for the work.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="testimonials-masonry">
+
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">New Pool Construction</span>
+          <p class="testimonial-text">"GFX turned our bare desert lot into the backyard we never thought we'd have. The craftsmanship is unreal — every detail is exactly what we asked for."</p>
+          <p class="testimonial-author">— R. & K. Morrison, Fort Mohave</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">Pool Renovation</span>
+          <p class="testimonial-text">"We had an old pool that was falling apart. GFX came out, told us exactly what needed to be done and what didn't, and the final result looks like a brand new build."</p>
+          <p class="testimonial-author">— T. Hartmann, Bullhead City</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">Spa & Water Feature</span>
+          <p class="testimonial-text">"The spillover spa was our dream addition. GFX integrated it perfectly with our existing pool — you'd think it was always part of the design."</p>
+          <p class="testimonial-author">— D. Alvarez, Laughlin, NV</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">New Pool + Decking</span>
+          <p class="testimonial-text">"From the first call to final startup, they were professional the entire way. No surprises, no excuses. Best investment we've made in our home."</p>
+          <p class="testimonial-author">— J. & P. Callahan, Kingman</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">Decking & Hardscape</span>
+          <p class="testimonial-text">"The travertine decking they put in completely transformed the look. We get compliments from neighbors constantly. Worth every dollar."</p>
+          <p class="testimonial-author">— M. Reyes, Fort Mohave</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">New Pool Construction</span>
+          <p class="testimonial-text">"I was nervous about the whole process but they walked us through everything. They handled the permits, the inspection — we didn't have to stress about any of it."</p>
+          <p class="testimonial-author">— S. Nguyen, Lake Havasu City</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">Pool Renovation</span>
+          <p class="testimonial-text">"Honest assessment, fair price, excellent work. They told me one part of the job wasn't necessary and saved me money. That kind of integrity is rare."</p>
+          <p class="testimonial-author">— G. Patterson, Bullhead City</p>
+        </div>
+
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-service">New Pool + Spa</span>
+          <p class="testimonial-text">"We've been swimming in our pool for two summers now and everything still looks and runs perfectly. These guys build things to last."</p>
+          <p class="testimonial-author">— B. & L. Thornton, Fort Mohave</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────────── -->
+  <section class="financing-banner">
+    <div class="container">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Your Turn</span>
+      <h2>Ready to Start Your Project?</h2>
+      <p>Join the list of homeowners who trusted GFX Pools to build something they're proud of.</p>
+      <a href="contact.html" class="btn btn-financing">Get a Quote</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">GFX <span style="color: var(--orange);">Pools</span></div>
+        <p>Ground Effects LLC — Custom pool and spa contractor serving Fort Mohave, Bullhead City, Laughlin, and surrounding areas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+          <li><a href="mailto:info@gfxpools.com">info@gfxpools.com</a></li>
+          <li><a href="https://www.facebook.com/GFXPools" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ground Effects LLC. All rights reserved.</span>
+      <span>Fort Mohave, Arizona</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
