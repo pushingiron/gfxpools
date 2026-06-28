@@ -370,4 +370,12 @@ footer {
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
   .cell-large, .cell-tall, .cell-wide, .cell-small { grid-column: span 12; min-height: 220px; }
   .hero-actions { flex-direction: column; }
+  /* Buy Button product name and price contrast fix */
+.shopify-buy__product__title {
+  color: #ffffff !important;
+}
+
+.shopify-buy__product__price {
+  color: #cccccc !important;
+}
 }
