@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- ── Navigation ─────────────────────────────────────────── -->
   <nav>
     <a href="index.html" class="nav-logo">GFX <span>Pools</span></a>
     <ul class="nav-links">
@@ -30,7 +29,6 @@
     </button>
   </nav>
 
-  <!-- ── Hero ───────────────────────────────────────────────── -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content container">
@@ -44,7 +42,6 @@
     </div>
   </section>
 
-  <!-- ── Services overview ──────────────────────────────────── -->
   <section>
     <div class="container">
       <div class="section-header">
@@ -86,7 +83,6 @@
     </div>
   </section>
 
-  <!-- ── Desert Steel Shop ──────────────────────────────────── -->
   <section class="shop-section">
     <div class="container">
       <div class="section-header center">
@@ -97,18 +93,8 @@
         <p style="color: var(--orange); font-family: 'Inter', sans-serif; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 0.5rem;">Featured Product — 1 of 19 Poolside Sculptures</p>
       </div>
 
-      <!--
-        ┌─────────────────────────────────────────────────────────┐
-        │  SHOPIFY BUY BUTTON EMBED                               │
-        │                                                         │
-        │  Replace the placeholder div below with the embed       │
-        │  code from Shopify → Sales Channels → Buy Button.       │
-        │  Select your Desert Steel collection and copy the       │
-        │  generated <script> snippet here.                       │
-        └─────────────────────────────────────────────────────────┘
-      -->
       <div style="display: flex; justify-content: center;">
-      <div id='product-component-1782524480284'></div>
+      <div id='product-component-1782797935980'></div>
       </div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -132,13 +118,13 @@
   }
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'gfx-pools.myshopify.com',
-      storefrontAccessToken: '5722a2ea57fcd85f9a3ce10aa2c18e57',
+      domain: 'zzt80a-rq.myshopify.com',
+      storefrontAccessToken: 'df3eec731786692a8050f6843a163bf1',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: '15087967076718',
-        node: document.getElementById('product-component-1782524480284'),
+        id: '9156578246898',
+        node: document.getElementById('product-component-1782797935980'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -149,15 +135,24 @@
           "margin-left": "auto",
           "margin-right": "auto",
           "margin-bottom": "50px"
+        },
+        "title": {
+          "color": "#ffffff"
+        },
+        "price": {
+          "color": "#cccccc"
+        },
+        "compareAt": {
+          "color": "#888888"
         }
       },
       "button": {
-        "background-color": "#E8620A",
         ":hover": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         },
+        "background-color": "#e8620a",
         ":focus": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         }
       }
     },
@@ -187,6 +182,24 @@
           "max-width": "100%",
           "margin-left": "0px",
           "margin-bottom": "0px"
+        },
+        "title": {
+          "color": "#ffffff"
+        },
+        "price": {
+          "color": "#cccccc"
+        },
+        "compareAt": {
+          "color": "#888888"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#d15809"
+        },
+        "background-color": "#e8620a",
+        ":focus": {
+          "background-color": "#d15809"
         }
       }
     },
@@ -196,12 +209,35 @@
   },
   "option": {},
   "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#d15809"
+        },
+        "background-color": "#e8620a",
+        ":focus": {
+          "background-color": "#d15809"
+        }
+      }
+    },
     "text": {
       "total": "Subtotal",
       "button": "Checkout"
     }
   },
-  "toggle": {}
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#e8620a",
+        ":hover": {
+          "background-color": "#d15809"
+        },
+        ":focus": {
+          "background-color": "#d15809"
+        }
+      }
+    }
+  }
 },
       });
     });
@@ -216,7 +252,6 @@
     </div>
   </section>
 
-  <!-- ── Our Work (portfolio) ───────────────────────────────── -->
   <section>
     <div class="container">
       <div class="section-header">
@@ -226,7 +261,6 @@
       </div>
     </div>
     <div class="portfolio-grid container">
-      <!-- Replace src values with actual project photos -->
       <div class="cell cell-large">
         <img src="images/portfolio-1.jpg" alt="Custom pool project" loading="lazy">
       </div>
@@ -245,7 +279,6 @@
     </div>
   </section>
   
-  <!-- ── Follow on Facebook ─────────────────────────────────── -->
   <section style="background: var(--dark-mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   	<div class="container" style="text-align: center;">
     	<span class="eyebrow">Stay Connected</span>
@@ -256,7 +289,6 @@
   	</div>
   </section>
 
-  <!-- ── Testimonials teaser ────────────────────────────────── -->
   <section style="background: var(--dark-mid); border-top: 1px solid var(--border);">
     <div class="container">
       <div class="section-header center">
@@ -287,8 +319,6 @@
     </div>
   </section>
 
-  <!-- ── Financing banner ───────────────────────────────────── -->
-  
   <section style="background: var(--dark-mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem; text-align: center;">
     <div class="container">
       <span class="eyebrow">Financing Available</span>
@@ -300,7 +330,6 @@
     </div>
   </section>
 
-  <!-- ── Brand stamp ───────────────────────────────────────── -->
   <section style="background: var(--dark-base); border-top: 1px solid var(--border); padding: 3rem 2rem; text-align: center;">
     <div class="container">
       <img src="images/gfx-logo.png" alt="GFX Pools Logo" style="max-width: 160px; width: 100%; margin-bottom: 1.5rem;">
@@ -309,7 +338,6 @@
     </div>
   </section>
 
-  <!-- ── Footer ─────────────────────────────────────────────── -->
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
