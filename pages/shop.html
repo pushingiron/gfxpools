@@ -52,7 +52,7 @@
         └─────────────────────────────────────────────────────────┘
       -->
 
-      <div id='collection-component-1782522605472'></div>
+      <div id='collection-component-1782797624167'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -75,13 +75,13 @@
   }
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'gfx-pools.myshopify.com',
-      storefrontAccessToken: '5722a2ea57fcd85f9a3ce10aa2c18e57',
+      domain: 'zzt80a-rq.myshopify.com',
+      storefrontAccessToken: 'df3eec731786692a8050f6843a163bf1',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
-        id: '666280362350',
-        node: document.getElementById('collection-component-1782522605472'),
+        id: '482534686962',
+        node: document.getElementById('collection-component-1782797624167'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -104,22 +104,25 @@
           "padding-top": "calc(75% + 15px)",
           "position": "relative",
           "height": "0"
+        },
+        "title": {
+          "color": "#ffffff"
+        },
+        "price": {
+          "color": "#cccccc"
+        },
+        "compareAt": {
+          "color": "#888888"
         }
       },
       "button": {
-        "background-color": "#E8620A",
         ":hover": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         },
+        "background-color": "#e8620a",
         ":focus": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         }
-      },
-      "title": {
-        "color": "#ffffff"
-      },
-      "price": {
-        "color": "#cccccc"
       }
     },
     "text": {
@@ -148,6 +151,24 @@
           "max-width": "100%",
           "margin-left": "0px",
           "margin-bottom": "0px"
+        },
+        "title": {
+          "color": "#ffffff"
+        },
+        "price": {
+          "color": "#cccccc"
+        },
+        "compareAt": {
+          "color": "#888888"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#d15809"
+        },
+        "background-color": "#e8620a",
+        ":focus": {
+          "background-color": "#d15809"
         }
       }
     },
@@ -157,25 +178,35 @@
   },
   "option": {},
   "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#d15809"
+        },
+        "background-color": "#e8620a",
+        ":focus": {
+          "background-color": "#d15809"
+        }
+      }
+    },
     "text": {
       "total": "Subtotal",
       "button": "Checkout"
     }
   },
-  "button": {
+  "toggle": {
     "styles": {
-      "button": {
-        "background-color": "#E8620A",
+      "toggle": {
+        "background-color": "#e8620a",
         ":hover": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         },
         ":focus": {
-          "background-color": "#d05509"
+          "background-color": "#d15809"
         }
       }
     }
-  },
-  "toggle": {}
+  }
 },
       });
     });
@@ -183,7 +214,6 @@
 })();
 /*]]>*/
 </script>
-
     </div>
   </section>
 
