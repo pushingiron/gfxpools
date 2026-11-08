@@ -25,3 +25,21 @@ window.addEventListener('scroll', () => {
     navEl.style.background = 'rgba(13,13,13,0.92)';
   }
 });
+
+// ── Contact form prefill (from shop "Request a quote" links) ───
+(function () {
+  var msg = document.getElementById('message');
+  var svc = document.getElementById('service');
+  if (!msg || !svc) return;
+  var params = new URLSearchParams(window.location.search);
+  var product = params.get('product');
+  if (!product) return;
+  var size = params.get('size');
+  var price = parseFloat(params.get('price'));
+  svc.value = 'desert-steel';
+  if (!msg.value) {
+    msg.value = "I'd like a quote on the " + product + (size ? ' \u2014 ' + size : '') +
+      (isNaN(price) ? '' : ' (listed at $' + price.toLocaleString('en-US', { minimumFractionDigits: price % 1 ? 2 : 0 }) + ')') +
+      '.\n\nDelivery city / address: ';
+  }
+})();
